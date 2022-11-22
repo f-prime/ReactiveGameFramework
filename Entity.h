@@ -13,6 +13,7 @@ static EntityUID entity_uid = 0;
 class Entity {
   public:
     std::map<std::string, EventBusUID> subscriptions;
+    SignalBus cleanUp;
     EntityID eid;
     EntityUID ueid;
 };
